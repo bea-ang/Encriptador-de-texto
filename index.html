@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>
+         <img class="logo" src="./assets/Logo.png" alt="logo alura">
+    </header>
+    <main class="contenido">
+        <section1 class="contenedor__encriptado">
+            <textarea class="area__encriptado" placeholder ="Ingrese el texto aqui"></textarea>
+            <div>
+                <h2 class="condiciones"> Solo letras minúsculas y sin acentos</h2>
+            </div>
+            <div class="botones">
+                <button class="boton__encriptar" onclick="botonEncriptar()"> Encriptar </button>
+                <button class="boton__desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+            </div>
+        </section1>
+        <section2 class="contenedor__desencriptado">
+            <textarea class="mensaje__desencriptado"></textarea>
+            <div class="texto__consigna">
+                <h3 class="texto__destacado">Ningún mensaje fue encontrado</h3>
+                <h4 class="consigna">Ingrese el texto que desea encriptar o desencriptar</h4>
+            </div>
+            <div>
+                <button class="boton__copiar" onclick="botonCopiar()"> Copiar </button>
+            </div>
+        
+        </section2> 
+    </main>
+    <footer class="desarrollador">
+        <p> Desarrollado por Beatriz Iturri</p>
+    </footer>
+<script src="./app/app.js"></script>
+</body>
+</html>
